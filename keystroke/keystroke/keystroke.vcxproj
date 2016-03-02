@@ -149,10 +149,12 @@
     <ClCompile Include="karnivora.cpp" />
     <ClCompile Include="keystroke.cpp" />
     <ClCompile Include="Point.cpp" />
+    <ClCompile Include="singa.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="karnivora.h" />
     <ClInclude Include="Point.h" />
+    <ClInclude Include="singa.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

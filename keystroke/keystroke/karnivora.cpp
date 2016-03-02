@@ -7,10 +7,6 @@ karnivora::karnivora() {
 	mlapar = 10;
 }
 
-void karnivora::makan() {
-	mlapar = 10;
-}
-
 void karnivora::lihat() {
 	//perlu definisi makhluk
 }

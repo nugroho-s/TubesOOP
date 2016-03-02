@@ -5,9 +5,9 @@
 class karnivora:public makhluk {
 public:
 	karnivora();
-	void makan();
+	virtual void makan() = 0;
 	void lihat();
-private:
+protected:
 	int mlapar;
 	int jenismakanan;
 };

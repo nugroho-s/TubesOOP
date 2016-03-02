@@ -24,12 +24,18 @@
     <ClCompile Include="karnivora.cpp">
       <Filter>Header Files</Filter>
     </ClCompile>
+    <ClCompile Include="singa.cpp">
+      <Filter>Header Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="karnivora.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="Point.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="singa.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
