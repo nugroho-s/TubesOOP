@@ -153,6 +153,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="karnivora.h" />
+    <ClInclude Include="makhluk.h" />
     <ClInclude Include="Point.h" />
     <ClInclude Include="singa.h" />
   </ItemGroup>

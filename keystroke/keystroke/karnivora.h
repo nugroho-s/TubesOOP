@@ -1,6 +1,7 @@
 #pragma once
 #include <stdlib.h>
 #include "Point.h"
+#include "makhluk.h"
 
 class karnivora:public makhluk {
 public:
