@@ -21,6 +21,9 @@
     <ClCompile Include="Point.cpp">
       <Filter>Header Files</Filter>
     </ClCompile>
+    <ClCompile Include="karnivora.cpp">
+      <Filter>Header Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="karnivora.h">

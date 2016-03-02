@@ -146,6 +146,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="karnivora.cpp" />
     <ClCompile Include="keystroke.cpp" />
     <ClCompile Include="Point.cpp" />
   </ItemGroup>
