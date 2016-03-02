@@ -1,5 +1,5 @@
 # TubesOOP
-Tubes OOP - Dunia Kita<br\>
+Tubes OOP - Dunia Kita<br/>
 Pembagian PIC (bukan pembagian tugas):<br\>
 Nugroho: board, karnivora, singa.<br\>
 Harry: ular, elang, makhluk.<br\>
