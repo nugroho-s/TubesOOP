@@ -5,6 +5,7 @@ singa::singa() {
 	int y = rand() % 100;
 	P.set(x, y);
 	mlapar = 10;
+	power = 50;
 }
 
 void singa::makan() {
