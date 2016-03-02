@@ -8,5 +8,5 @@ singa::singa() {
 }
 
 void singa::makan() {
-	mlapar = 0;
+	mlapar = 10;
 }
