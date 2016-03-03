@@ -1,13 +1,12 @@
 #include "singa.h"
 
 singa::singa() {
-	int x = rand() % 100;
-	int y = rand() % 100;
-	P.set(x, y);
-	mlapar = 10;
+	mlapar = maxlapar;
 	power = 50;
+	dt = 2;
+	arah = 'n';
 }
 
 void singa::makan() {
-	mlapar = 10;
+	mlapar = maxlapar;
 }

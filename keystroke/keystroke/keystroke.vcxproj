@@ -147,9 +147,10 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="karnivora.cpp" />
-    <ClCompile Include="keystroke.cpp" />
+    <ClCompile Include="makhluk.cpp" />
     <ClCompile Include="Point.cpp" />
     <ClCompile Include="singa.cpp" />
+    <ClCompile Include="Source.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="karnivora.h" />

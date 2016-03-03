@@ -6,5 +6,5 @@ public:
 	singa();
 	virtual void makan();
 private:
-	//nothing
+	const int maxlapar = 30;
 };

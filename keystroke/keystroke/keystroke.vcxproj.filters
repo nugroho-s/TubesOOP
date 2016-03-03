@@ -15,9 +15,6 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="keystroke.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="Point.cpp">
       <Filter>Header Files</Filter>
     </ClCompile>
@@ -25,6 +22,12 @@
       <Filter>Header Files</Filter>
     </ClCompile>
     <ClCompile Include="singa.cpp">
+      <Filter>Header Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Source.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="makhluk.cpp">
       <Filter>Header Files</Filter>
     </ClCompile>
   </ItemGroup>

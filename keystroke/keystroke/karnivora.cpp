@@ -8,5 +8,13 @@ karnivora::karnivora() {
 }
 
 void karnivora::lihat() {
-	//perlu definisi makhluk
+	dt += 1;
 }
+
+void karnivora::bergerak() {
+	makhluk::bergerak();
+	mlapar--;
+	printf("%d\n", mlapar);
+}
+
+int karnivora::getlapar() { return mlapar; }
