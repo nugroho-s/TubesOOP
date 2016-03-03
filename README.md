@@ -16,7 +16,7 @@ cuma perlu digunakan sekali saat memulai project<br/>
 2. commit changes<br/>
 jika kamu melakukan perubahan dan ingin push perubahan ke github, lakukan commit terlebih dulu dengan:<br/>
 "git commit -m 'nama commit'"<br/>
-jika tidak bisa, gunakan perintah<br/>
+jika tidak bisa, gunakan perintah ini dan ulangi<br/>
 "git add ."<br/>
 3. Push commit<br/>
 untuk push perubahan ke github gunakan perintah<br/>
