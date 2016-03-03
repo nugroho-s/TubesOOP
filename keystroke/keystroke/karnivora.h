@@ -11,6 +11,7 @@ public:
 	void lihat();
 	void bergerak();
 	int getlapar();
+	void printstatmakhluk();
 protected:
 	int mlapar;
 	int jenismakanan;

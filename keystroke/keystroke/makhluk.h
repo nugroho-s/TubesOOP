@@ -14,4 +14,6 @@ public:
 	virtual void makan() = 0;
 	virtual int getlapar() = 0;
 	Point getlok();
+	void printlok();
+	virtual void printstatmakhluk();
 };

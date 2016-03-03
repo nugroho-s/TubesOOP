@@ -17,4 +17,9 @@ void karnivora::bergerak() {
 	mlapar--;
 }
 
+void karnivora::printstatmakhluk() {
+	makhluk::printstatmakhluk();
+	printf("tingkat kelaparan = %d\n", mlapar);
+}
+
 int karnivora::getlapar() { return mlapar; }

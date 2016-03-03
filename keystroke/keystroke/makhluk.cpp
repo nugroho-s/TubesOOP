@@ -14,4 +14,12 @@ void makhluk::bergerak() {
 	//jika keluar dari bidang, bagaimana?
 }
 
+void makhluk::printlok() {
+	printf("lokasi = (%d,%d)\n", P.getX(), P.getY());
+}
+
 Point makhluk::getlok() { return P; };
+
+void makhluk::printstatmakhluk() {
+	makhluk::printlok();
+}
