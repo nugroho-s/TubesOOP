@@ -11,3 +11,6 @@ dd x y<br/>
 dd tanggal commit<br/>
 x nomor anggota (ada di pembagian PIC di atas)<br/>
 y nomor commit hari ini yang kalian buat<br/>
+
+
+	
