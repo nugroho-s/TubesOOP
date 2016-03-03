@@ -1,15 +1,30 @@
+//
+// Header Point 
+//
+
+// fungsi utamanya untuk mengatur pergerakan objek turunan makhluk hidup
+
 #ifndef _POINT_H
 #define _POINT_H
 class Point {
       public:
-          Point ();
-          Point (int _X, int _Y);
-          int getX();
-          int getY();
-		  void set(int _x, int _y);
-          void move (int dx, int dy);
+		// konstruktor
+		Point ();
+        Point (int _X, int _Y);
+        
+		// GETTER 
+		int getX();
+        int getY();
+
+		// SETTER  
+		void set(int _x, int _y);
+
+		// memindahkan posisi (x, y) objek ke x+dx dan y+dy 
+		void move (int dx, int dy);
+		
       private:
-         int x;
-         int y;
+		// koordinat objek di bidang
+        int x;
+        int y;
 };
 #endif
