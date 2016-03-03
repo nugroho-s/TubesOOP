@@ -14,5 +14,7 @@ dd tanggal commit<br/>
 x kode anggota (ada di pembagian PIC di atas)<br/>
 y nomor commit hari ini yang kalian buat<br/>
 
-
-	
+# Peta spawn
+lihat di KonsepDuniaKita.txt<br/>
+spawn makhluk random berdasar tempatnya<br/>
+ukuran disamakan dengan peta di KonsepDuniaKita.txt<br/>
