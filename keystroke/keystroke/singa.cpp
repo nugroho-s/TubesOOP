@@ -2,7 +2,7 @@
 
 singa::singa() {
 	mlapar = maxlapar;
-	power = 50;
+	power = 3;
 	dt = 2;
 	arah = 'n';
 }
