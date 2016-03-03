@@ -1,19 +1,36 @@
-#pragma once
 #include "Point.h"
-#include <cstdio>
-#include <stdlib.h>
+#include "stdafx.h" 
 
+// Abstract Class - tidak bisa dibuat objeknya
 class makhluk {
 protected:
-	int dt, umur, power;
-	char arah;
-	Point P;
+	int dt;		//  selang waktu gerak sebuah objek turunan makhluk 
+	int umur;	// 
+	int power;	// kekuatan sebuah objek turunan makhluk 
+	int arah;	// arah gerak sebuah objek turunan makhluk 
+	Point P;	// koordinat sebuah objek turunan makhluk di bidang 
 public:
+	// konstruktor
 	makhluk();
+	
+	// destruktor 
+	virtual ~makhluk();
+	
+	// objek turunan makhluk berpindah ke koordinat lain 
 	virtual void bergerak();
+	
+	// memakan objek lain - kelas turunannya harus mengimplementasikan ini 
 	virtual void makan() = 0;
+	
+	//
+	// GETTER 
+	//
+	
+	// mendapatkan level kelaparan sebuah objek turunan makhluk 
 	virtual int getlapar() = 0;
+	// mendapatkan lokasi (x, y) sebuah objek turunan makhluk di bidang 
 	Point getlok();
+	
+	// menampilkan lokasi (x, y) sebuah objek turunan makhluk di bidang 
 	void printlok();
-	virtual void printstatmakhluk();
 };
