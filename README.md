@@ -26,6 +26,11 @@ https://help.github.com/articles/fetching-a-remote/<br/>
 
 
 # Peta spawn
-lihat di KonsepDuniaKita.txt<br/>
-spawn makhluk random berdasar tempatnya<br/>
-ukuran disamakan dengan peta di KonsepDuniaKita.txt<br/>
+1. lihat di KonsepDuniaKita.txt<br/>
+2. spawn makhluk random berdasar tempatnya<br/>
+3. ukuran disamakan dengan peta di KonsepDuniaKita.txt<br/>
+
+# Teknis
+1. semua include library ditaruh di dalam file "stdafx.h"<br/>
+2. yang meng-include "stdafx.h" hanyalah "makhluk.h"<br/>
+3. setiap class memiliki virtual destructor, walaupun implementasinya adalah "do nothing"<br/>
