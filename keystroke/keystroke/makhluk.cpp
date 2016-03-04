@@ -11,11 +11,15 @@ makhluk::makhluk() {
 	// inisialisasi nilai koordinat awal objek (x, y) dengan 
 	// nilai random 
 	int x = rand() % 100;
-	int y = rand() % 100; 
+	int y = rand() % 100;
 	P.set(x, y);
 	
 	// inisialisasi nilai arah gerak awal objek dengan nilai random (0 - 7)
 	int arah = rand() % 8;
+}
+
+makhluk::~makhluk() {
+	// destruktor
 }
 
 void makhluk::bergerak() {
@@ -33,17 +37,24 @@ void makhluk::bergerak() {
 	7 : timur laut
 	*/
 	
-	switch (arah) {
-		case 0 : P.move(power,0) ; break;
-		case 1 : P.move(power,-power) ; break;
-		case 2 : P.move(0,-power) ; break;
-		case 3 : P.move(-power,-power) ; break;
-		case 4 : P.move(-power,0) ; break;
-		case 5 : P.move(-power,power) ; break;
-		case 6 : P.move(0,power) ; break;
-		case 7 : P.move(power,power) ; break;
+	if (arah == 0) {
+		P.move(power,0);
+	} else if (arah == 1) {
+		P.move(power,-power);
+	} else if (arah == 2) {
+		P.move(0,-power);
+	} else if (arah == 3) {
+		P.move(-power,-power);
+	} else if (arah == 4) {
+		P.move(-power,0);
+	} else if (arah == 5) {
+		P.move(-power,power);
+	} else if (arah == 6) {
+		P.move(0,power);
+	} else if (arah == 7) {
+		P.move(power,power);
 	}
-		
+
 	//jika keluar dari bidang, bagaimana?
 }
 
