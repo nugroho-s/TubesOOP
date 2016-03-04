@@ -146,17 +146,23 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="driver.cpp" />
+    <ClCompile Include="herbivora.cpp" />
     <ClCompile Include="karnivora.cpp" />
     <ClCompile Include="makhluk.cpp" />
     <ClCompile Include="Point.cpp" />
     <ClCompile Include="singa.cpp" />
-    <ClCompile Include="Source.cpp" />
+    <ClCompile Include="stdafx.cpp" />
+    <ClCompile Include="zebra.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="herbivora.h" />
     <ClInclude Include="karnivora.h" />
     <ClInclude Include="makhluk.h" />
     <ClInclude Include="Point.h" />
     <ClInclude Include="singa.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="zebra.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

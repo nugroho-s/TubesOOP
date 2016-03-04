@@ -1,3 +1,5 @@
+#pragma once
+
 #include "Point.h"
 #include "stdafx.h" 
 
@@ -6,27 +8,30 @@ class makhluk {
 public:
 	// konstruktor
 	makhluk();
-	
+
 	// destruktor 
 	virtual ~makhluk();
-	
+
 	// objek turunan makhluk berpindah ke koordinat lain 
 	virtual void bergerak();
-	
+
 	// memakan objek lain - kelas turunannya harus mengimplementasikan ini 
 	virtual void makan() = 0;
-	
+
 	//
 	// GETTER 
 	//
-	
+
 	// mendapatkan level kelaparan sebuah objek turunan makhluk 
 	virtual int getlapar() = 0;
 	// mendapatkan lokasi (x, y) sebuah objek turunan makhluk di bidang 
 	Point getlok();
-	
+
 	// menampilkan lokasi (x, y) sebuah objek turunan makhluk di bidang 
 	void printlok();
+
+	//menampilkan semua status makhluk
+	virtual void printstatmakhluk();
 
 protected:
 	int dt;		//  selang waktu gerak sebuah objek turunan makhluk 

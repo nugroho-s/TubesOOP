@@ -24,10 +24,19 @@
     <ClCompile Include="singa.cpp">
       <Filter>Header Files</Filter>
     </ClCompile>
-    <ClCompile Include="Source.cpp">
+    <ClCompile Include="makhluk.cpp">
+      <Filter>Header Files</Filter>
+    </ClCompile>
+    <ClCompile Include="herbivora.cpp">
+      <Filter>Header Files</Filter>
+    </ClCompile>
+    <ClCompile Include="zebra.cpp">
+      <Filter>Header Files</Filter>
+    </ClCompile>
+    <ClCompile Include="driver.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="makhluk.cpp">
+    <ClCompile Include="stdafx.cpp">
       <Filter>Header Files</Filter>
     </ClCompile>
   </ItemGroup>
@@ -42,6 +51,15 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="makhluk.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="herbivora.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="zebra.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

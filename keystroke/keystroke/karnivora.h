@@ -3,7 +3,7 @@
 #include "Point.h"
 #include "makhluk.h"
 
-class karnivora:public makhluk {
+class karnivora : public makhluk {
 public:
 	karnivora();
 	//~karnivora();

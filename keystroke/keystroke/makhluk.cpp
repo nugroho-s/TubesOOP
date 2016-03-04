@@ -62,3 +62,11 @@ Point makhluk::getlok() {
 	// mengembalikan posisi (x, y) objek di bidang 
 	return P; 
 }
+
+void makhluk::printlok() {
+	printf("lokasi = (%d,%d)\n", P.getX(), P.getY());
+}
+
+void makhluk::printstatmakhluk() {
+	makhluk::printlok();
+}
