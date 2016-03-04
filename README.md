@@ -10,7 +10,7 @@ Pembagian PIC (bukan pembagian tugas):<br/>
 # Cara bekerja dengan github
 1. clone repository<br/>
 untuk mengclone repository github ke laptop kalian, gunakan perintah:<br/>
-"https://github.com/nugroho-s/TubesOOP"<br/>
+"git clone https://github.com/nugroho-s/TubesOOP"<br/>
 di cmd di direktori tempat kamu ingin copy<br/>
 cuma perlu digunakan sekali saat memulai project<br/>
 2. commit changes<br/>
