@@ -3,12 +3,6 @@
 
 // Abstract Class - tidak bisa dibuat objeknya
 class makhluk {
-protected:
-	int dt;		//  selang waktu gerak sebuah objek turunan makhluk 
-	int umur;	// 
-	int power;	// kekuatan sebuah objek turunan makhluk 
-	int arah;	// arah gerak sebuah objek turunan makhluk 
-	Point P;	// koordinat sebuah objek turunan makhluk di bidang 
 public:
 	// konstruktor
 	makhluk();
@@ -33,4 +27,11 @@ public:
 	
 	// menampilkan lokasi (x, y) sebuah objek turunan makhluk di bidang 
 	void printlok();
+
+protected:
+	int dt;		//  selang waktu gerak sebuah objek turunan makhluk 
+	int umur;	// 
+	int power;	// kekuatan sebuah objek turunan makhluk 
+	int arah;	// arah gerak sebuah objek turunan makhluk 
+	Point P;	// koordinat sebuah objek turunan makhluk di bidang 
 };
