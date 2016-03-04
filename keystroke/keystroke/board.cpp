@@ -12,7 +12,7 @@ board::board() {
 void board::printboard() {
 	for (int i = 0; i < 92; i++) {
 		for (int j = 0; j < 21; j++) {
-			printf("%c ", isi[i][j]);
+			printf("%c", isi[i][j]);
 		}
 		printf("\n");
 	}

@@ -25,8 +25,10 @@ int main() {
 		(*s).bergerak();
 	(*s).printstatmakhluk();
 	singa m;
-	while (m.getlapar()>0)
-		(m).bergerak();
+	b.tambah(m);
+	while (m.getlapar() > 0)
+		b.move(m);
+	b.printboard();
 	m.printstatmakhluk();
 	singa m2 = m;
 	m2.printstatmakhluk();
