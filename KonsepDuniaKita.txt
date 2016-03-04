@@ -49,10 +49,8 @@ Ketentuan:
 		bertambah jika mereka makan rumput (HERBIVORA) dan makan herbivora (KARNIVORA).
 		Kekuatan ini akan selalu berkurang, sehingga jika kekuatan = 0, maka hewan itu mati.
 		Kesimpulannya: 
-			- HERBIVORA dinyatakan mati jika: tidak sempat makan rumput (kekuatan = 0) 
-				atau dimakan KARNIVORA.
-			- Jika ada HERBIVORA yang berhasil sampai ke BENTENG TUJUAN, maka ia tidak akan pernah
-				mati.
-			- Yang pasti mati adalah KARNIVORA.
-			- Yang tidak akan mati adalah KURA-KURA.
+			- HERBIVORA dinyatakan mati jika: level kelaparan = 0, sudah sampai di benteng 
+				tujuan, atau dimakan KARNIVORA
+			- KARNIVORA dinyatakan mati jika: level kelaparan = 0.
+			- SEMUA MAKHLUK PASTI MATI.
 	- 
