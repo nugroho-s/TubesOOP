@@ -31,6 +31,6 @@ https://help.github.com/articles/fetching-a-remote/<br/>
 3. ukuran disamakan dengan peta di KonsepDuniaKita.txt<br/>
 
 # Teknis
-1. semua include library ditaruh di dalam file "stdafx.h"<br/>
+1. semua include library (STL) ditaruh di dalam file "stdafx.h"<br/>
 2. yang meng-include "stdafx.h" hanyalah "makhluk.h"<br/>
 3. setiap class memiliki virtual destructor, walaupun implementasinya adalah "do nothing"<br/>
