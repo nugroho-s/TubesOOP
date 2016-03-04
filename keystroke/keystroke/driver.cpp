@@ -2,17 +2,22 @@
 #include"singa.h"
 #include "karnivora.h"
 #include <iostream>
+#include "board.h"
 
 using namespace std;
 
 int main() {
 	makhluk* s;
+	board b;
+	b.printboard();
 	s = new singa;
+	b.tambah(*s);
 	(*s).printlok();
-	(*s).bergerak();
+	b.printboard();
 	cout << (*s).getlapar()<<endl;
 	(*s).printstatmakhluk();
 	(*s).makan();
+	b.move(*s);
 	for (int i = 0; i < 3;i++)
 		(*s).bergerak();
 	(*s).printstatmakhluk();
