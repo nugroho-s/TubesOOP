@@ -4,14 +4,6 @@
 #include <iostream>
 #include "board.h"
 
-struct guarded_thread : thread {
-	using thread::thread;
-	~guarded_thread() {
-		if (joinable())
-			join();
-	}
-};
-
 void test() {
 	cout << "test guarded_thread" << endl;
 }
