@@ -8,18 +8,17 @@
 
 makhluk::makhluk() {
 	// konstruktor
-	// inisialisasi nilai koordinat awal objek (x, y) dengan 
-	// nilai random 
+	// inisialisasi nilai koordinat awal objek (x, y) dengan nilai random 
 	int x = rand() % 30;
 	int y = rand() % 30;
 	P.set(x, y);
-	
 	// inisialisasi nilai arah gerak awal objek dengan nilai random (0 - 7)
-	int arah = rand() % 8;
+	arah = rand() % 8;
 }
 
 makhluk::~makhluk() {
 	// destruktor
+	cout << "destructor makhluk" << endl;
 }
 
 void makhluk::bergerak() {
