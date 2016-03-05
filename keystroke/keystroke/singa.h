@@ -1,11 +1,22 @@
-#pragma once
 #include "karnivora.h"
 
-class singa : public karnivora{
+class singa : public karnivora {
 public:
+	// constructor
 	singa();
-	virtual void makan();
+	
+	// copy constructor 
+	singa(singa&);
+	
+	// operator= 
 	singa& operator= (singa&);
-private:
+	
+	// destruktor
+	virtual ~singa();
+	
+	// method
+	virtual void makan();
+	
+protected:
 	const int maxlapar = 30;
 };
