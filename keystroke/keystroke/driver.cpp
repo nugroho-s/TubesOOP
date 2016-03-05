@@ -15,11 +15,11 @@ int main() {
 	board b;
 	guarded_thread t{ test };
 	t.join();
-	//b.printboard();
+	b.printboard();
 	s = new singa;
 	b.tambah(*s);
 	(*s).printlok();
-	//b.printboard();
+	b.printboard();
 	cout << (*s).getlapar()<<endl;
 	(*s).printstatmakhluk();
 	(*s).makan();
@@ -34,7 +34,7 @@ int main() {
 	b.tambah(m);
 	while (m.getlapar() > 0)
 		b.move(m);
-	//b.printboard();
+	b.printboard();
 	m.printstatmakhluk();
 	singa m2 = m;
 	m2.printstatmakhluk();

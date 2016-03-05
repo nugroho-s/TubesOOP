@@ -2,16 +2,21 @@
 #include <cstdio>
 
 board::board() {
-	for (int i = 0; i < 92; i++) {
-		for (int j = 0; j < 21; j++) {
+	for (int i = 0; i < sizey; i++) {
+		for (int j = 0; j < sizex; j++) {
 			isi[i][j] = ' ';
 		}
 	}
 }
 
 void board::printboard() {
-	for (int i = 0; i < 92; i++) {
-		for (int j = 0; j < 21; j++) {
+	printf(" ");
+	for (int i = 0; i < sizex; i++)
+		printf("%d", i % 10);
+	printf("\n");
+	for (int i = 0; i < sizey; i++) {
+		printf("%d", i % 10);
+		for (int j = 0; j < sizex; j++) {
 			printf("%c", isi[i][j]);
 		}
 		printf("\n");

@@ -18,5 +18,7 @@ public:
 	//hapus makhluk dari papan
 
 protected:
-	char isi[92][21]; //x dan y secara berurutan, bukan baris dan kolom
+	const int sizex = 30;
+	const int sizey = 30;
+	char isi[30][30];
 };

@@ -10,8 +10,8 @@ makhluk::makhluk() {
 	// konstruktor
 	// inisialisasi nilai koordinat awal objek (x, y) dengan 
 	// nilai random 
-	int x = rand() % 100;
-	int y = rand() % 100;
+	int x = rand() % 30;
+	int y = rand() % 30;
 	P.set(x, y);
 	
 	// inisialisasi nilai arah gerak awal objek dengan nilai random (0 - 7)
