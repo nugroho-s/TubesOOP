@@ -4,16 +4,30 @@
 #include <iostream>
 #include "board.h"
 
+struct guarded_thread : thread {
+	using thread::thread;
+	~guarded_thread() {
+		if (joinable())
+			join();
+	}
+};
+
+void test() {
+	cout << "test guarded_thread" << endl;
+}
+
 using namespace std;
 
 int main() {
 	makhluk* s;
 	board b;
-	b.printboard();
+	guarded_thread t{ test };
+	t.join();
+	//b.printboard();
 	s = new singa;
 	b.tambah(*s);
 	(*s).printlok();
-	b.printboard();
+	//b.printboard();
 	cout << (*s).getlapar()<<endl;
 	(*s).printstatmakhluk();
 	(*s).makan();
@@ -28,7 +42,7 @@ int main() {
 	b.tambah(m);
 	while (m.getlapar() > 0)
 		b.move(m);
-	b.printboard();
+	//b.printboard();
 	m.printstatmakhluk();
 	singa m2 = m;
 	m2.printstatmakhluk();
