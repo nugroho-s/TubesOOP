@@ -25,15 +25,15 @@ void board::printboard() {
 
 void board::tambah(makhluk& m) {
 	Point P = m.getlok();
-	isi[P.getX()][P.getY()] = 'm';
+	isi[P.getY()][P.getX()] = 'm';
 }
 
 void board::move(makhluk& m) {
 	Point P = m.getlok();
-	isi[P.getX()][P.getY()] = ' ';
+	isi[P.getY()][P.getX()] = ' ';
 	m.bergerak();
 	P = m.getlok();
-	isi[P.getX()][P.getY()] = 'm';
+	isi[P.getY()][P.getX()] = 'm';
 }
 
 void board::hapus(makhluk& m) {
