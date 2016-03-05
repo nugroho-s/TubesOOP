@@ -1,6 +1,7 @@
 #include "makhluk.h"
-#include"singa.h"
+#include "singa.h"
 #include "karnivora.h"
+#include "zebra.h"
 #include <iostream>
 #include "board.h"
 
@@ -11,32 +12,29 @@ void test() {
 using namespace std;
 
 int main() {
-	makhluk* s;
-	board b;
-	guarded_thread t{ test };
-	t.join();
-	b.printboard();
-	s = new singa;
-	b.tambah(*s);
-	(*s).printlok();
-	b.printboard();
-	cout << (*s).getlapar()<<endl;
-	(*s).printstatmakhluk();
-	(*s).makan();
-	b.move(*s);
-	for (int i = 0; i < 3;i++)
-		(*s).bergerak();
-	(*s).printstatmakhluk();
-	while ((*s).getlapar()>0)
-		(*s).bergerak();
-	(*s).printstatmakhluk();
-	singa m;
-	b.tambah(m);
-	while (m.getlapar() > 0)
-		b.move(m);
-	b.printboard();
-	m.printstatmakhluk();
-	singa m2 = m;
-	m2.printstatmakhluk();
+	list<makhluk*> LOM;
+	makhluk* temp;
+	int makhluk;
+	while (true) {
+		if (GetAsyncKeyState(VK_UP))
+		{
+			makhluk = rand() % 2;
+			if (makhluk == 0) {
+				cout << "alokasi singa" << endl;
+				temp = new singa;
+			}
+			else {
+				cout << "alokasi zebra" << endl;
+				temp = new zebra;
+			}
+			LOM.emplace_back(temp);
+		}
+		if (GetAsyncKeyState(VK_ESCAPE))
+			break;
+		Sleep(100);
+	}
+	for (auto& x : LOM) {
+		(*x).printstatmakhluk();
+	}
 	return 0;
 }
