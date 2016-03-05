@@ -2,6 +2,7 @@
 
 #include "stdafx.h"
 #include "makhluk.h"
+#include <fstream>
 
 class board {
 public:
@@ -16,6 +17,8 @@ public:
 	//setelah move, makhluk akan berpindah
 	void hapus(makhluk&);
 	//hapus makhluk dari papan
+	void tofile();
+	//cetak papan ke file csv
 
 protected:
 	const int sizex = 30;

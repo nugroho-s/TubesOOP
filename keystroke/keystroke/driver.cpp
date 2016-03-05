@@ -13,6 +13,7 @@ using namespace std;
 
 int main() {
 	list<makhluk*> LOM;
+	board b;
 	makhluk* temp;
 	int makhluk;
 	while (true) {
@@ -28,6 +29,7 @@ int main() {
 				temp = new zebra;
 			}
 			LOM.emplace_back(temp);
+			b.tambah(*temp);
 		}
 		if (GetAsyncKeyState(VK_ESCAPE))
 			break;
@@ -36,5 +38,7 @@ int main() {
 	for (auto& x : LOM) {
 		(*x).printstatmakhluk();
 	}
+	b.printboard();
+	b.tofile();
 	return 0;
 }

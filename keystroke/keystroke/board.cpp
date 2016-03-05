@@ -40,3 +40,35 @@ void board::hapus(makhluk& m) {
 	Point P = m.getlok();
 	isi[P.getX()][P.getY()] = ' ';
 }
+
+void board::tofile() {
+	ofstream ofs("save.csv", ofstream::binary);
+	char* buffer;
+	int sizeall = (sizey*sizex*2) + (sizey*2);
+	buffer = new char[sizeall];
+	int b, k;
+	b = k = 0;
+	int i = 0;
+	while (i < sizeall) {
+		if (k > sizex) {
+			buffer[i] = 0x0d;
+			i++;
+			buffer[i] = 0x0a;
+			k = 0; b++;
+		}
+		else {
+			buffer[i] = isi[b][k];
+			k++;
+			i++;
+			buffer[i] = 0x2c;
+		}
+		i++;
+	}
+	try {
+		ofs.write(buffer, sizeall);
+	}
+	catch (int e) {
+		cout << "exception occured: "<<e << endl;
+	}
+	ofs.close();
+}
