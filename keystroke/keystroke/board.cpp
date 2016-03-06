@@ -50,7 +50,7 @@ void board::tofile() {
 	b = k = 0;
 	int i = 0;
 	while (i < sizeall) {
-		if (k > sizex) {
+		if (k >= sizex) {
 			buffer[i] = 0x0d;
 			i++;
 			buffer[i] = 0x0a;

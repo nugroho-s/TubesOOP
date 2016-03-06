@@ -12,7 +12,7 @@ void test() {
 using namespace std;
 
 int main() {
-	list<makhluk*> LOM;
+	list<makhluk*> LOM; //list berisi pointer makhluk
 	board b;
 	makhluk* temp;
 	int makhluk;
@@ -21,10 +21,12 @@ int main() {
 		{
 			makhluk = rand() % 2;
 			if (makhluk == 0) {
+				//jika nol buat singa
 				cout << "alokasi singa" << endl;
 				temp = new singa;
 			}
 			else {
+				//jika satu buat zebra
 				cout << "alokasi zebra" << endl;
 				temp = new zebra;
 			}

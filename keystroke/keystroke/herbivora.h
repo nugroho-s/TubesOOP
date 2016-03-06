@@ -12,24 +12,24 @@
 
 class herbivora: public makhluk {
 public:
-	// konstruktor
+	//! konstruktor
 	herbivora();
 	
-	// destruktor
+	//!destruktor
 	virtual ~herbivora();
 	
-	// memakan objek lain - kelas turunannya harus mengimplementasikan ini 
+	//!memakan objek lain - kelas turunannya harus mengimplementasikan ini 
 	virtual void makan()=0;
 	
-	// bersembunyi di benteng kecil ATAU di cangkang utk kasus kura2
+	//!bersembunyi di benteng kecil ATAU di cangkang utk kasus kura2
 	virtual void sembunyi();
 	
-	// objek turunan herbivora berpindah ke koordinat lain 
+	//!objek turunan herbivora berpindah ke koordinat lain 
 	virtual void bergerak();
 	
-	// mendapatkan level kelaparan sebuah objek turunan herbivora  
+	//!mendapatkan level kelaparan sebuah objek turunan herbivora  
 	virtual int getlapar();
 	
 protected:
-	int mlapar;		// level kelaparan sebuah objek turunan herbivora 
+	int mlapar;		//!level kelaparan sebuah objek turunan herbivora 
 };

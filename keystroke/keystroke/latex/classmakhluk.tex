@@ -1,0 +1,71 @@
+\hypertarget{classmakhluk}{}\section{makhluk Class Reference}
+\label{classmakhluk}\index{makhluk@{makhluk}}
+
+
+Abstract Class -\/ tidak bisa dibuat objeknya.  
+
+
+
+
+{\ttfamily \#include $<$makhluk.\+h$>$}
+
+Inheritance diagram for makhluk\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classmakhluk}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classmakhluk_adbc575116661f7837693c1038aa16c40}{makhluk} ()\hypertarget{classmakhluk_adbc575116661f7837693c1038aa16c40}{}\label{classmakhluk_adbc575116661f7837693c1038aa16c40}
+
+\begin{DoxyCompactList}\small\item\em konstruktor \end{DoxyCompactList}\item 
+virtual \hyperlink{classmakhluk_a29be824daa6c805d6259a2db6870b943}{$\sim$makhluk} ()\hypertarget{classmakhluk_a29be824daa6c805d6259a2db6870b943}{}\label{classmakhluk_a29be824daa6c805d6259a2db6870b943}
+
+\begin{DoxyCompactList}\small\item\em destruktor \end{DoxyCompactList}\item 
+virtual void \hyperlink{classmakhluk_a0b4d95d9f0dc0662360064e31d3a986c}{bergerak} ()\hypertarget{classmakhluk_a0b4d95d9f0dc0662360064e31d3a986c}{}\label{classmakhluk_a0b4d95d9f0dc0662360064e31d3a986c}
+
+\begin{DoxyCompactList}\small\item\em objek turunan makhluk berpindah ke koordinat lain \end{DoxyCompactList}\item 
+virtual void \hyperlink{classmakhluk_a36493787b5e974f2f6d3da7b260ac9cf}{makan} ()=0\hypertarget{classmakhluk_a36493787b5e974f2f6d3da7b260ac9cf}{}\label{classmakhluk_a36493787b5e974f2f6d3da7b260ac9cf}
+
+\begin{DoxyCompactList}\small\item\em memakan objek lain -\/ kelas turunannya harus mengimplementasikan ini \end{DoxyCompactList}\item 
+virtual int \hyperlink{classmakhluk_a9e348a59401f5e66aae435d6b73d0481}{getlapar} ()=0\hypertarget{classmakhluk_a9e348a59401f5e66aae435d6b73d0481}{}\label{classmakhluk_a9e348a59401f5e66aae435d6b73d0481}
+
+\begin{DoxyCompactList}\small\item\em mendapatkan level kelaparan sebuah objek turunan makhluk \end{DoxyCompactList}\item 
+\hyperlink{class_point}{Point} \hyperlink{classmakhluk_a484f54517aaf27f21e6414c7f5fadd7b}{getlok} ()\hypertarget{classmakhluk_a484f54517aaf27f21e6414c7f5fadd7b}{}\label{classmakhluk_a484f54517aaf27f21e6414c7f5fadd7b}
+
+\begin{DoxyCompactList}\small\item\em mendapatkan lokasi (x, y) sebuah objek turunan makhluk di bidang \end{DoxyCompactList}\item 
+void \hyperlink{classmakhluk_a8dd010db343f225fe4dc01b36761c888}{printlok} ()\hypertarget{classmakhluk_a8dd010db343f225fe4dc01b36761c888}{}\label{classmakhluk_a8dd010db343f225fe4dc01b36761c888}
+
+\begin{DoxyCompactList}\small\item\em menampilkan lokasi (x, y) sebuah objek turunan makhluk di bidang \end{DoxyCompactList}\item 
+virtual void \hyperlink{classmakhluk_a87083e725642bb622827304d146242d2}{printstatmakhluk} ()\hypertarget{classmakhluk_a87083e725642bb622827304d146242d2}{}\label{classmakhluk_a87083e725642bb622827304d146242d2}
+
+\begin{DoxyCompactList}\small\item\em menampilkan semua status makhluk \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int {\bfseries dt}\hypertarget{classmakhluk_a0bbc6dba97261e511bb9a407f5081f83}{}\label{classmakhluk_a0bbc6dba97261e511bb9a407f5081f83}
+
+\item 
+int \hyperlink{classmakhluk_add10f9625fcea85f3871ad2996808c0f}{umur}\hypertarget{classmakhluk_add10f9625fcea85f3871ad2996808c0f}{}\label{classmakhluk_add10f9625fcea85f3871ad2996808c0f}
+
+\begin{DoxyCompactList}\small\item\em selang waktu gerak sebuah objek turunan makhluk \end{DoxyCompactList}\item 
+int {\bfseries power}\hypertarget{classmakhluk_a43298c45f6d7353bb3f0ddd45048da1f}{}\label{classmakhluk_a43298c45f6d7353bb3f0ddd45048da1f}
+
+\item 
+int \hyperlink{classmakhluk_a6977ae3b2d7a83f823498c04326c2979}{arah}\hypertarget{classmakhluk_a6977ae3b2d7a83f823498c04326c2979}{}\label{classmakhluk_a6977ae3b2d7a83f823498c04326c2979}
+
+\begin{DoxyCompactList}\small\item\em kekuatan sebuah objek turunan makhluk \end{DoxyCompactList}\item 
+\hyperlink{class_point}{Point} \hyperlink{classmakhluk_ae52cf4323ddd35bf9c15e9598131167e}{P}\hypertarget{classmakhluk_ae52cf4323ddd35bf9c15e9598131167e}{}\label{classmakhluk_ae52cf4323ddd35bf9c15e9598131167e}
+
+\begin{DoxyCompactList}\small\item\em arah gerak sebuah objek turunan makhluk \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Abstract Class -\/ tidak bisa dibuat objeknya. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+makhluk.\+h\item 
+makhluk.\+cpp\end{DoxyCompactItemize}

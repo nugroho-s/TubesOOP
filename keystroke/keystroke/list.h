@@ -11,16 +11,16 @@
 class list
 {
 public:
-	// struktur sebuah node list 
+	//! struktur sebuah node list 
 	struct node {			
 		string nama_makhluk;
 		struct node *next;
-	} *head, *tail;		// ---head menunjuk address node pertama
-						// ---tail menunjuk address node terakhir 
+	} *head, *tail;		//! ---head menunjuk address node pertama
+						//! ---tail menunjuk address node terakhir 
 
-	// constructor	
+	//! constructor	
 	list();
-	// destructor
+	//! destructor
 	~list();			
 
 	// return 1 jika list kosong, 0 jika sebaliknya
